@@ -14,7 +14,7 @@ const UserCard = (props) => {
 
       <div>
         <p>{user.name}</p>
-        <p>`&#64;{user.username}`</p>
+        <p>&#64;{user.username}</p>
         <Link to={user.website}>{user.website}</Link>
       </div>
 
