@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { AppRoute } from './const';
+import NotFoundScreen from './components/not-found-screen/not-found-screen';
+import MainScreen from './components/main-screen/main-screen';
+import UserScreen from './components/user-screen/user-screen';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path={AppRoute.ROOT} element={<MainScreen />} />
+      <Route path={AppRoute.USER_DETAIL} element={<UserScreen />} />
+      <Route path="*" element={<NotFoundScreen />} />
+    </Routes>
   );
-}
+};
 
 export default App;
