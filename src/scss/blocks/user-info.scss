@@ -1,17 +1,35 @@
 .user-info__card {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 400px;
   width: 100%;
   margin: 50px auto;
-  padding: 30px;
   box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
   border-radius: 18px;
 }
 
-.user-info__card-title {
+.user-info__title {
   text-align: center;
   color: $bright;
   font-weight: 700;
   font-size: 24px;
+}
+
+.user-info__avatar {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  height: 160px;
+  background: rgb(48,29,111);
+  background: linear-gradient(180deg, rgba(48,29,111,1) 0%, rgba(47,196,202,1) 99%, rgba(47,196,202,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info__details {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
