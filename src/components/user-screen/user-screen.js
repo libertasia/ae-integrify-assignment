@@ -33,7 +33,7 @@ const UserScreen = () => {
     return (
       <React.Fragment>
         <Header />
-        <main>
+        <main className="main container">
           <h1 className="visually-hidden">User info page</h1>
           <section>
             <h2 className="visually-hidden">Detail user's info</h2>
