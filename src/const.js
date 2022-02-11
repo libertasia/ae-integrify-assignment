@@ -26,9 +26,9 @@ export const UserShape = PropTypes.shape({
 
 export const AppRoute = {
   ROOT: `/`,
-  USER_DETAIL: `/:id`,
+  USER_DETAIL: `/users/:id`,
 };
 
 export const ApiRoute = {
-  ROOT: `/`,
+  ROOT: `/users`,
 };

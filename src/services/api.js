@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BACKEND_URL = `https://jsonplaceholder.typicode.com/users`;
+const BACKEND_URL = `https://jsonplaceholder.typicode.com`;
 
 const REQUEST_TIMEOUT = 5000;
 

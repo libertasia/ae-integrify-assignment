@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const ShowDetailsButton = (props) => {
   const {id} = props;
 
-  const hrefToUserInfoPage = `/${id}`;
+  const hrefToUserInfoPage = `/users/${id}`;
 
   return (
     <div className="user-card__button">

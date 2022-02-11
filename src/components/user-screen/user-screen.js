@@ -14,7 +14,7 @@ const UserScreen = () => {
   const id = parseInt(useParams().id, 10);
 
   useEffect(() => {
-    api.get(`/${id}`)
+    api.get(`/users/${id}`)
       .then((response) => {
         setError(null);
         setUser(response.data);
@@ -36,11 +36,11 @@ const UserScreen = () => {
         <main className="main container">
           <h1 className="main__title visually-hidden">User info page</h1>
           <section className="user-info">
-            <h2 className="visually-hidden">Detail user's info</h2>
-            <article>
-              <h3>User info</h3>
+            <h2 className="user-info__title visually-hidden">Detail user's info</h2>
+            <article className="user-info__card">
+              <h3 className="user-info__card-title">User info</h3>
               <p>name: {user.name}</p>
-              <p>username: {user.username}</p>
+              <p>username: &#64;{user.username}</p>
               <p>company: {user.company.name}</p>
               <address>
                 <p>email: <a href={`mailto:${user.email}`}>{user.email}</a></p>

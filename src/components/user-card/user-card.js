@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from '@mui/material';
 import ShowDetailsButton from '../show-details-button/show-details-button';
+import LanguageIcon from '@mui/icons-material/Language';
 import { UserShape } from '../../const';
 import { Avatar } from '@mui/material';
 
@@ -18,7 +19,7 @@ const UserCard = (props) => {
       <div className="user-card__info">
         <h3 className="user-card__name">{user.name}</h3>
         <p className="user-card__username">&#64;{user.username}</p>
-        <Link className="user-card__website" href={user.website} underline="hover">{user.website}</Link>
+        <Link className="user-card__website" href={user.website} underline="hover"><LanguageIcon className="user-card__website-img" />{user.website}</Link>
       </div>
 
       <ShowDetailsButton id={user.id} />
