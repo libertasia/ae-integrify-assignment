@@ -34,8 +34,8 @@ const UserScreen = () => {
       <React.Fragment>
         <Header />
         <main className="main container">
-          <h1 className="visually-hidden">User info page</h1>
-          <section>
+          <h1 className="main__title visually-hidden">User info page</h1>
+          <section className="user-info">
             <h2 className="visually-hidden">Detail user's info</h2>
             <article>
               <h3>User info</h3>

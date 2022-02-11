@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../header/header';
 import Footer from '../footer/footer';
-import UsersList from '../users-list/users-list';
+import UserList from '../user-list/user-list';
 import { createAPI } from '../../services/api';
 import { ApiRoute } from '../../const';
 
@@ -33,10 +33,10 @@ const MainScreen = () => {
       <React.Fragment>
         <Header />
         <main className="main container">
-          <h1 className="visually-hidden">Users page</h1>
-          <section>
-            <h2 className="visually-hidden">Users list</h2>
-            <UsersList users={users} />
+          <h1 className="main__title visually-hidden">Users page</h1>
+          <section className="main__catalog catalog">
+            <h2 className="catalog__title visually-hidden">Users list</h2>
+            <UserList users={users} />
           </section>
         </main>
         <Footer />

@@ -1,0 +1,12 @@
+.user-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (min-width: $mobile) and (max-width: $table-breakpoint) {
+    flex-direction: column;
+  }
+}

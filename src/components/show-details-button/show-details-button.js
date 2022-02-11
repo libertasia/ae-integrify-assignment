@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Button } from '@mui/material';
 import PropTypes from 'prop-types';
 
 const ShowDetailsButton = (props) => {
@@ -8,9 +8,9 @@ const ShowDetailsButton = (props) => {
   const hrefToUserInfoPage = `/${id}`;
 
   return (
-    <React.Fragment>
-      <Link to={hrefToUserInfoPage}>More details</Link>
-    </React.Fragment>
+    <div className="user-card__button">
+      <Button variant="contained" href={hrefToUserInfoPage}>More details</Button>
+    </div>
   );
 };
 

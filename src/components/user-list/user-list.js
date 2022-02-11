@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { UserShape } from '../../const';
 import UserCard from '../user-card/user-card';
 
-const UsersList = (props) => {
+const UserList = (props) => {
   const {users} = props;
 
   return (
-    <ul>
+    <ul className="catalog__list user-list">
       {users.map((user) =>
         <UserCard
           key={`user-${user.id}`}
@@ -18,8 +18,8 @@ const UsersList = (props) => {
   );
 };
 
-UsersList.propTypes = {
+UserList.propTypes = {
   users: PropTypes.arrayOf(UserShape),
 }
 
-export default UsersList;
+export default UserList;
