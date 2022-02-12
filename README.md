@@ -2,6 +2,8 @@
 
 This is an assignment for FullStack program at Integrify.
 
+Latest version is deployed at https://infallible-benz-8250cf.netlify.app/
+
 ### Requirements:
 
 - Create a home page which shows cards containing information about users
