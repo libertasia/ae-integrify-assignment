@@ -8,13 +8,6 @@
   border-radius: 18px;
 }
 
-.user-info__title {
-  text-align: center;
-  color: $bright;
-  font-weight: 700;
-  font-size: 24px;
-}
-
 .user-info__avatar {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
@@ -29,7 +22,24 @@
 }
 
 .user-info__details {
-  padding: 30px;
+  padding: 30px 15px;
   display: flex;
   flex-direction: column;
+}
+
+.user-info__details-item {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 90px auto;
+  grid-template-rows: auto;
+  grid-template-areas: "name value";
+}
+
+.user-info__details-name {
+  grid-area: name;
+  text-align: right;
+}
+
+.user-info__details-value {
+  grid-area: value;
 }
