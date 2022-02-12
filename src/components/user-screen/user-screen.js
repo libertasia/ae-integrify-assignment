@@ -57,7 +57,7 @@ const UserScreen = () => {
                 color="text.primary"
               >
                 <PersonIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-                User
+                User Details
               </Typography>
             </Breadcrumbs>
             <article className="user-info__card">

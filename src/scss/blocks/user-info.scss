@@ -38,8 +38,10 @@
 .user-info__details-name {
   grid-area: name;
   text-align: right;
+  color: $footer-text-color;
 }
 
 .user-info__details-value {
   grid-area: value;
+  font-weight: 500;
 }
